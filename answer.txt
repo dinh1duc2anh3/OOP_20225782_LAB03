@@ -1,0 +1,13 @@
+Question:
+- If you create a constructor method to build a DVD by title then create a constructor method to build a DVD by category. Does JAVA allow you to do this?
+
+
+Java allows you to create multiple constructors in a class as long as they have 
+different parameter lists. This is known as constructor overloading, and it is a 
+common practice in Java to provide different ways to initialize objects with 
+different sets of parameters. So, yes, Java allows you to create constructor methods 
+for DVDs based on title and category, provided they have distinct parameter lists, 
+such as different types or a different number of parameters.
+
+
+
