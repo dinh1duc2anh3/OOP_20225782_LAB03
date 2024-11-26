@@ -83,6 +83,7 @@ public class Cart {
 		itemsOrderedList.remove(disc);
 		System.out.println("The disc " + disc.getTitle() + " has been removed");
 		qtyOrdered = itemsOrderedList.size();
+		
 	}
 	
 	//total cost of all dvd in cart
@@ -100,6 +101,19 @@ public class Cart {
 			String displayTitle = itemsOrderedList.get(i).getTitle();
 			System.out.print(displayTitle + ", ");
 		}
+		System.out.print('\n');
 	}
+	
+	public void printCart() {
+		System.out.println("***********************CART***********************");
+		System.out.println("Ordered Items:");
+		for (int i=0; i<itemsOrderedList.size(); i++) {
+			System.out.println(itemsOrderedList.get(i).toString());
+		}
+		System.out.println("Total cost: "+totalCost());
+		System.out.println("***************************************************");
+	}
+	
+	
 	
 }
