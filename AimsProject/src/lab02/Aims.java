@@ -39,7 +39,9 @@ public class Aims {
 		//printCart
 		anOrder.printCart();
 		
-		
+		anOrder.search(11);
+		anOrder.search("Harry potter");
+		anOrder.search("titanic");
 	}
 	
 	

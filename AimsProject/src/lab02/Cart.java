@@ -114,6 +114,26 @@ public class Cart {
 		System.out.println("***************************************************");
 	}
 	
+	public void search(int id) {
+		boolean found = false;
+		for (int i=0; i<itemsOrderedList.size(); i++) {
+			if (itemsOrderedList.get(i).getId() == id) {
+				System.out.println(itemsOrderedList.get(i).toString());
+				found = true;
+			}
+		}
+		if (!found) System.out.println("No match (id="+id+") is found");
+	}
 	
+	public void search(String title) {
+		boolean found = false;
+		for (int i=0; i<itemsOrderedList.size(); i++) {
+			if (itemsOrderedList.get(i).getTitle().equalsIgnoreCase(title)) {
+				System.out.println(itemsOrderedList.get(i).toString());
+				found = true;
+			}
+		}
+		if (!found) System.out.println("No match (title="+title+") is found");
+	}
 	
 }
