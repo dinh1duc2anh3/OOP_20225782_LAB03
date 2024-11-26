@@ -1,6 +1,8 @@
-package lab02;
+package hust.soict.ite6.oop.aims.store;
 
 import java.util.ArrayList;
+
+import hust.soict.ite6.oop.aims.disc.DigitalVideoDisc;
 
 public class Store {
 	public static final int MAX_NUBMERS_STORED = 100;

@@ -1,0 +1,47 @@
+1. What happens if users choose “Cancel”?
+	when users choose "Cancel", the message "You've chosen: No" will appear on the screen
+	
+2. How to customize the options to users, e.g. only two options: “Yes” and “No”, OR “I do” and “I don’t” (Suggestion: Use Javadocs or using Eclipse/Netbean IDE help).
+	- declare a new string array called options, and inside it is all of the choices you want to include in the selection icon.
+	- use JOptionPane.showOptionDialog and take (options array) as (Object[] options), and ( options[0]) as (Object initialValue)
+	- check option choosed according to the index of the string in the string array called (options)
+	
+CODE:
+package week01;
+
+import javax.swing.JOptionPane;
+
+public class ChoosingOption {
+	public static void main(String[] args) {
+/*Yes/No option 
+		int option = JOptionPane.showConfirmDialog(null, "Do you want to change the first class ticket?","Choosing Options",JOptionPane.YES_NO_OPTION);
+		JOptionPane.showMessageDialog(null, "You've chosen: "+ (option==JOptionPane.YES_OPTION?"Yes":"No"));
+*/
+
+/*Customizable option*/
+		String[] options = new String[] {"I do","I don't","I dont know"};
+		
+		int option = JOptionPane.showOptionDialog(
+				null, 
+				"Do you want to change the first class ticket?", 
+				"Choosing Options",
+				JOptionPane.DEFAULT_OPTION,
+				JOptionPane.PLAIN_MESSAGE,
+				null,
+				options,
+				options[0]
+		);
+		
+		if (option==0) {
+			JOptionPane.showMessageDialog(null, "You've chosen: I do");
+		}
+		else if (option==1){
+			JOptionPane.showMessageDialog(null, "You've chosen: I don't");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "You've chosen: I dont know");
+		}
+		
+		System.exit(0);
+	}
+}

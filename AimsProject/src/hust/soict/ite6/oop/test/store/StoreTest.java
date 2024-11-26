@@ -1,4 +1,7 @@
-package lab02;
+package hust.soict.ite6.oop.test.store;
+
+import hust.soict.ite6.oop.aims.disc.DigitalVideoDisc;
+import hust.soict.ite6.oop.aims.store.Store;
 
 public class StoreTest {
 

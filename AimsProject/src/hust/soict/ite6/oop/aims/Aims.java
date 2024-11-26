@@ -1,4 +1,7 @@
-package lab02;
+package hust.soict.ite6.oop.aims;
+
+import hust.soict.ite6.oop.aims.cart.Cart;
+import hust.soict.ite6.oop.aims.disc.DigitalVideoDisc;
 
 public class Aims {
 	public static void main(String[] args) {
