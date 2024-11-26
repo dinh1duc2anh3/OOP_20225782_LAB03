@@ -97,13 +97,13 @@ public class Cart {
 	}
 	
 	
-	//print out all dvd in the cart
+	//print out all dvd in the cart using StringBuilder
 	public void displayCart() {
+		StringBuilder displayTitle = new StringBuilder();
 		for (int i=0; i<itemsOrderedList.size(); i++) {
-			String displayTitle = itemsOrderedList.get(i).getTitle();
-			System.out.print(displayTitle + ", ");
+			displayTitle.append(itemsOrderedList.get(i).getTitle()).append(", ") ;
 		}
-		System.out.print('\n');
+		System.out.println(displayTitle.toString());
 	}
 	
 	public void printCart() {
