@@ -14,6 +14,8 @@ public class TestPassingParameter {
 		changeTitle(jungleDVD, cinderellaDVD.getTitle());
 		System.out.println("jungle dvd title: "+ jungleDVD.getTitle());
 		
+		
+		
 	}
 //	hàm swap cũ mà ko thay đổi được giá trị
 	public static void swap(Object o1,Object o2 ) {

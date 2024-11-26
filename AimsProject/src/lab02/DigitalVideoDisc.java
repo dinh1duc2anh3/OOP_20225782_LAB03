@@ -92,6 +92,17 @@ public class DigitalVideoDisc { //store title, category, cost, director, length
 		this.cost = cost;
 	}
 	
+	//display full info of the dvd chosen in the cart
+	public String toString() {
+		String dvdString = this.id+". DVD - "+this.getTitle()+" - ";
+		if ( this.getCategory() != null && !this.getCategory().isEmpty() ) dvdString = dvdString + this.getCategory()+ " - ";
+		if ( this.getDirector() != null && !this.getDirector().isEmpty()) dvdString = dvdString + this.getDirector()+ " - ";
+		if (this.getLength() > 0  ) dvdString = dvdString + this.getLength()+ " min : ";
+		if (this.getCost() > 0) dvdString = dvdString + this.getCost()+ " $ ";
+		return dvdString;
+	}
+	
+	
 	
 }
 
