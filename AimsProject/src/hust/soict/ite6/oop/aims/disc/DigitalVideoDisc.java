@@ -1,4 +1,4 @@
-package lab02;
+package hust.soict.ite6.oop.aims.disc;
 
 
 public class DigitalVideoDisc { //store title, category, cost, director, length 

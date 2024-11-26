@@ -1,7 +1,9 @@
-package lab02;
+package hust.soict.ite6.oop.aims.cart;
 
 
 import java.util.ArrayList;
+
+import hust.soict.ite6.oop.aims.disc.DigitalVideoDisc;
 
 public class Cart {
 	public static final int MAX_NUBMERS_ORDERED = 20; //mamximum number of dvd in a cart

@@ -1,4 +1,6 @@
-package lab02;
+package hust.soict.ite6.oop.test.disc;
+
+import hust.soict.ite6.oop.aims.disc.DigitalVideoDisc;
 
 public class TestPassingParameter {
 
@@ -31,8 +33,8 @@ public class TestPassingParameter {
 //	}
 //	
 	public static void changeTitle(DigitalVideoDisc dvd , String title ) {
-		String oldTitle = dvd.getTitle();
 		dvd.setTitle(title);
+		
 	}
 	
 
